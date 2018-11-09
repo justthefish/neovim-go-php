@@ -4,7 +4,7 @@ neovim golang and php config
 This is an early aplha - but the time to move from vim 7.x has come.
 
     Requirements: 
-     - neovim 
+     - neovim >= 0.3.*
      - ack-grep
      - fzf (tries to be installed automatically)
 
