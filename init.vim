@@ -13,6 +13,13 @@ Plug 'tpope/vim-surround'
  Plug 'StanAngeloff/php.vim', {'for': 'php'}
 
 "--------------------------------------------------
+" Indexer 
+Plug 'vim-scripts/DfrankUtil'
+Plug 'vim-scripts/vimprj'
+Plug 'vim-scripts/indexer.tar.gz'
+
+
+"--------------------------------------------------
 " Ack-grep
 Plug 'mileszs/ack.vim'
 
@@ -48,6 +55,10 @@ endif
 Plug 'fatih/vim-go', {'for': 'go'}
 Plug 'nsf/gocode'
 Plug 'jodosha/vim-godebug', {'for': 'go'}
+
+"--------------------------------------------------
+" Snippets 
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 call plug#end()
 
