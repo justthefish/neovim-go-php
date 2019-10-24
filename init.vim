@@ -8,16 +8,17 @@ Plug 'junegunn/fzf.vim'
 Plug 'justthefish/vim-thefish-colors'
 Plug 'tpope/vim-surround'
 
+
+"--------------------------------------------------
+" Tags management
+ Plug 'ludovicchabant/vim-gutentags'
+"--------------------------------------------------
+
 "--------------------------------------------------
 " Php syntax hilite
  Plug 'StanAngeloff/php.vim', {'for': 'php'}
 
 "--------------------------------------------------
-" Indexer 
-Plug 'vim-scripts/DfrankUtil'
-Plug 'vim-scripts/vimprj'
-Plug 'vim-scripts/indexer.tar.gz'
-
 
 "--------------------------------------------------
 " Ack-grep
@@ -192,14 +193,8 @@ let g:vim_markdown_conceal = 0
 map <C-BS> :call GoToggleBreakpoint()
 map <C-F9> :call GoDebug()
 
-" -----------------------------------------------------
-"  Indexer setup
-"  ----------------------------------------------------
-" let g:Indexer_ctagsCommandLineOptions=""
-let g:indexer_tagsDirname = $HOME."/.config/nvim/tags"
-" let g:indexer_lookForProjectDir = 0 
-let g:indexer_ctagsCommandLineOptions="-h '.php' --exclude='\.git' --totals=yes --tag-relative=yes --regex-PHP='/abstract class ([^ ]*)/\1/c/' --regex-PHP='/interface ([^ ]*)/\1/c/' --regex-PHP='/(public\s+|static\s+|protected\s+|private\s+)\$([^ \t=]+)/\2/p/' --regex-PHP='/const\s+([^ \t=]+)/\1/d/' --regex-PHP='/final\s+(public\s+|static\s+|abstract\s+|protected\s+|private\s+)function\s+\&?\s*([^ (]+)/\2/f/' --regex-PHP='/(public |static |abstract |protected |private )+function ([^ (]*)/\2/f/' --PHP-kinds=+cpdf-v "
-let g:indexer_ctagsDontSpecifyFilesIfPossible = 1
-let g:indexer_disableCtagsWarning = 1
-let g:indexer_disableIndexerFilesDirsWarning=1
 
+" -----------------------------------------------------
+" Gutentags config
+" -----------------------------------------------------
+let g:gutentags_cache_dir = $HOME.'/.config/nvim/tags/'
