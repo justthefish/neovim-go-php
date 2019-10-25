@@ -97,6 +97,7 @@ set lazyredraw
 set wmh=0
 set t_Co=256              " color numbers
 set nowrap                " do not wrap lines
+set wildignore=*.o,*.obj,*.pyc,*.swp " ignore certain file types
 
 "-------------------------------------------------
 " ESC-c ... capitalize current word (and goto next word)
@@ -198,6 +199,8 @@ map <C-F9> :call GoDebug()
 " Gutentags config
 " -----------------------------------------------------
 let g:gutentags_cache_dir = $HOME.'/.config/nvim/tags/'
+let g:gutentags_ctags_exclude = ['*\.pyc', 'env/', 'dist/', 'build/']
+let g:ctags_extra_args=['--exclude=env', '--exclude=build', '--exclude=`dist']
 
 " -----------------------------------------------------
 "  Fuzzyfinder
