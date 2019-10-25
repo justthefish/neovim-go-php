@@ -63,4 +63,5 @@ Tips & Tricks
 
 - *Find usages* - Shift+3 on word, then :Ack
 - *Find file in project* - :NERDTreeFind while file is open
+- *Disable tag generation* - :> .notags in project root folder
 
