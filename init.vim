@@ -199,8 +199,8 @@ map <C-F9> :call GoDebug()
 " Gutentags config
 " -----------------------------------------------------
 let g:gutentags_cache_dir = $HOME.'/.config/nvim/tags/'
-let g:gutentags_ctags_exclude = ['*\.pyc', 'env/', 'dist/', 'build/']
-let g:ctags_extra_args=['--exclude=env', '--exclude=build', '--exclude=`dist']
+let g:gutentags_ctags_exclude = ['*\.pyc', 'env', 'dist', 'build']
+let g:ctags_extra_args=['--exclude=env', '--exclude=build', '--exclude=dist']
 
 " -----------------------------------------------------
 "  Fuzzyfinder
